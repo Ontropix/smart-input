@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EntryXamlControlXamarinForms.Views.MainPage"
+             xmlns:controls="clr-namespace:EntryXamlControlXamarinForms.Controls"
+             xmlns:behaviors="clr-namespace:EntryXamlControlXamarinForms.Controls.Behaviors">
+  <StackLayout>
+    <Label Text="Email" VerticalOptions="Center" HorizontalOptions="Center" />
+    <controls:EntryPromptControl HorizontalOptions="FillAndExpand" Placeholder="example@mail.com" Text="{Binding Email, Mode=TwoWay}" IsValid="{Binding IsEmailValid, Mode=TwoWay}" Keyboard="Email">
+      <controls:EntryPromptControl.BehaviorEntry>
+        <behaviors:EmailValidatorBehavior/>
+      </controls:EntryPromptControl.BehaviorEntry>
+    </controls:EntryPromptControl>
+    <Label Text="Phone" VerticalOptions="Center" HorizontalOptions="Center" />
+    <controls:EntryPromptControl HorizontalOptions="FillAndExpand" Placeholder="800-555-5555" Text="{Binding Phone, Mode=TwoWay}" IsValid="{Binding IsPhoneValid, Mode=TwoWay}" Keyboard="Telephone">
+      <controls:EntryPromptControl.BehaviorEntry>
+        <behaviors:PhonelValidatorBehavior/>
+      </controls:EntryPromptControl.BehaviorEntry>
+    </controls:EntryPromptControl>
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="EntryXamlControlXamarinForms.Controls.EntryPromptControl">
+  <StackLayout Orientation="Horizontal">
+
+    <StackLayout HorizontalOptions="FillAndExpand" Spacing="0">
+      <Entry x:Name="Input" HorizontalOptions="FillAndExpand"></Entry>
+      <Label x:Name="Advice" TextColor="Gray" HorizontalOptions="FillAndExpand" />
+    </StackLayout>
+
+    <Image x:Name="BadStatus" Source="http://tlc.matc.edu/wp-content/uploads/2014/04/warning-flat-icon.png"
+                          VerticalOptions="Start"
+                          HorizontalOptions="End"
+                          HeightRequest="25"
+                          Aspect="AspectFit" />
+    <Image x:Name="GoodStatus" Source="https://www.mdgrep.com/images/_vdmain.icon/dbmon8.png"
+                          VerticalOptions="Start"
+                          HorizontalOptions="End"
+                          HeightRequest="25"
+                          Aspect="AspectFit" />
+  </StackLayout>
+</ContentView>
