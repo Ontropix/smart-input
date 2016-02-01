@@ -14,7 +14,7 @@
                           HorizontalOptions="End"
                           HeightRequest="25"
                           Aspect="AspectFit" />
-    <Image x:Name="GoodStatus" Source="https://www.mdgrep.com/images/_vdmain.icon/dbmon8.png"
+    <Image x:Name="GoodStatus" Source="https://orders.idealtaxsolution.com/images/check-mark-3-icon.fw.png"
                           VerticalOptions="Start"
                           HorizontalOptions="End"
                           HeightRequest="25"

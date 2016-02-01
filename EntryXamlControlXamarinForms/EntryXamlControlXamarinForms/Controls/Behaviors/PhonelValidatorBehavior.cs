@@ -9,7 +9,7 @@ namespace EntryXamlControlXamarinForms.Controls.Behaviors
     public class PhonelValidatorBehavior : BaseValidatorBehavior
     {
         private const string adviceText = "Enter a valid phone";
-        private const string phoneRegex = @"^[2-9]\d{2}-\d{3}-\d{4}$";
+        private const string phoneRegex = @"^[0-9]\d{11}$";
 
         public PhonelValidatorBehavior()
             : base(adviceText, phoneRegex)
